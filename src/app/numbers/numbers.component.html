@@ -1,0 +1,22 @@
+<p>
+	numbers works!
+</p>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+	<div>
+		<label for="n1">Name    </label>
+		<input id="n1" type="text" formControlName="n1" class='numbfield' data-numb="1">
+		<input id="n2" type="text" formControlName="n2" class='numbfield' data-numb="2">
+		<input id="n3" type="text" formControlName="n3" class='numbfield' data-numb="3">
+		<input id="n4" type="text" formControlName="n4" class='numbfield' data-numb="4">
+		<input id="n5" type="text" formControlName="n5" class='numbfield' data-numb="5">
+		<input id="n6" type="text" formControlName="n6" class='numbfield' data-numb="6">
+  </div>
+
+
+
+		<button class="button" type="submit">Purchase</button>
+		<br>
+      {{clickMessage}}
+
+</form>
